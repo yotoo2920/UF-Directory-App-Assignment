@@ -9,9 +9,9 @@ var mongoosConnection = mongoose.connection;
 
 mongoosConnection.on("connected", function () {
     console.log("It is connected");
-    //findLibraryWest();
-    //removeCable();
-    //updatePhelpsLab();
+    findLibraryWest();
+    removeCable();
+    updatePhelpsLab();
     retrieveAllListings();
 });
 
