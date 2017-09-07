@@ -10,9 +10,9 @@ var mongoosConnection = mongoose.connection;
 mongoosConnection.on("connected", function () {
     console.log("It is connected");
     //findLibraryWest();
-    removeCable();
-    // updatePhelpsLab();
-    // retrieveAllListings();
+    //removeCable();
+    //updatePhelpsLab();
+    retrieveAllListings();
 });
 
 var findLibraryWest = function() {
@@ -34,11 +34,11 @@ var removeCable = function() {
     on cable TV. Since we live in the 21st century and most courses are now web based, go ahead
     and remove this listing from your database and log the document to the console. 
    */
-    Listing.findOneAndRemove({ code: 'CABL' }, function(err) {
+    Listing.findOneAndRemove({ code: 'CABL' }, function(err, doc) {
         if (err) throw err;
 
         // entry removed
-        console.log(Listing);
+        console.log(doc);
     });
 };
 
@@ -49,14 +49,21 @@ var updatePhelpsLab = function() {
     Phelps Laboratory's address is incorrect. Find the listing, update it, and then 
     log the updated document to the console. 
    */
-};
-var retrieveAllListings = function() {
-  /* 
-    Retrieve all listings in the database, and log them to the console. 
-   */
+    var updateAddress = 'Miami, FL 33104';
+
+    Listing.findOneAndUpdate({ name: 'Phelps Laboratory' }, { address: updateAddress }, function(err, phelpsDoc) {
+        if(err) throw err;
+
+        // log the updated document to the console
+        phelpsDoc.address = updateAddress;
+        console.log(phelpsDoc);
+    });
 };
 
-// findLibraryWest();
-// removeCable();
-// updatePhelpsLab();
-// retrieveAllListings();
+var retrieveAllListings = function() {
+    Listing.find({}, function(err, listings){
+        if(err) throw err;
+
+        console.log(listings);
+    });
+};
