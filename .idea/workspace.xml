@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0599e444-ce60-4c00-ab4a-2c922cf2a287" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/queries.js" afterPath="$PROJECT_DIR$/queries.js" />
-    </list>
+    <list default="true" id="0599e444-ce60-4c00-ab4a-2c922cf2a287" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -53,7 +51,7 @@
       <file leaf-file-name="queries.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/queries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="-170">
               <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -186,15 +184,15 @@
       <updated>1504664558855</updated>
       <workItem from="1504664560260" duration="12787000" />
       <workItem from="1504731555007" duration="4515000" />
-      <workItem from="1504754484845" duration="31000" />
+      <workItem from="1504754484845" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17333000" />
+    <option name="totallyTimeSpent" value="17899000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="711" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="713" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17474186" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -345,7 +343,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/queries.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="-170">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
