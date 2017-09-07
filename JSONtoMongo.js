@@ -47,6 +47,10 @@ var writeJSONMongo = function () {
         for (var x in entriesArray) {
             var tempEntry = entriesArray[x];
 
+            /*
+              Instantiate a mongoose model for each listing object in the JSON file,
+              and then save it to your Mongo database
+             */
             var toBeSendToMongo = new Listing(tempEntry);
 
             toBeSendToMongo.save(function (err) {
@@ -61,18 +65,13 @@ var writeJSONMongo = function () {
 
 }
 
-
-
-
-
-/* 
-  Instantiate a mongoose model for each listing object in the JSON file, 
-  and then save it to your Mongo database 
+/*
+  Once you've written + run the script, check out your MongoLab database to ensure that
+  it saved everything correctly.
  */
 
 
 
-/* 
-  Once you've written + run the script, check out your MongoLab database to ensure that 
-  it saved everything correctly. 
- */
+
+
+
