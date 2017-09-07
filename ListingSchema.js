@@ -7,10 +7,10 @@ var listingSchema = new Schema({
     code: { type: String, required: true, unique: true },
     name: { type: String, required: true, unique: true },
     coordinates: {
-        latitude: Number,
-        longitude: Number,
+        latitude: { type: Number, required: false, unique: false },
+        longitude: { type: Number, required: false, unique: false },
     },
-    address: String
+    address: { type: String, required: false, unique: false },
 });
 
 /* create a 'pre' function that adds the updated_at (and created_at if not already there) property */
